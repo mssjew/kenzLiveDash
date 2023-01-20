@@ -176,6 +176,7 @@ body {
 
 .dateSection {
     display: flex;
+    flex-direction: column;
     align-items: center;
 
 }
@@ -186,12 +187,12 @@ body {
 }
 
 #todaysDate {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 
 #currentTime {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 
