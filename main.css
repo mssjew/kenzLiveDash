@@ -144,15 +144,15 @@ body {
 }
 
 .logoSection {
-    background-image: url("https://msspricess.b-cdn.net/kenzlogomain.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: center;
-    margin-top: 3%;
-    margin: 15px;
-    height: 20vh;
-    width: 15vw;
+  background-image: url("https://msspricess.b-cdn.net/kenzlogomain.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  margin-top: 3%;
+  margin: 15px;
+  height: 20vh;
+  width: 15vw;
 
 }
 
@@ -210,17 +210,20 @@ body {
     display: flex;
     flex-direction: column;
     width: 38%;
+
 }
 
 .bidTicker {
     display: flex;
     flex-direction: column;
     width: 38%;
+  
 }
 
 .askTicker h2, .bidTicker h2, .lowTop h2, .highBottom h2 {
     font-size: 5rem;
     vertical-align: middle;
+
 }
 
 .lowAndHigh {
@@ -263,6 +266,15 @@ align-self: center;
     font-weight: 500;
 }
 
+.ttSection  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
 .barPriceSection {
   display: flex;
   align-items: center;
@@ -287,6 +299,20 @@ table {
   margin-right: auto;
   margin-left: auto;
 }
+
+
+.table2 tr:first-child {
+  background-color: chocolate;
+  color: white;
+}
+
+
+.table2 tr:first-child td {
+  font-weight: bold;
+  color: white;
+  font-size: 6rem;
+}
+
 /* 
 .table1, .table2 {
   width: 49%;
