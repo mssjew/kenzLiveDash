@@ -51,7 +51,7 @@ console.log(currentDay);
 if (currentDay === 0 || currentDay === 6) {
   marketStatus.innerHTML = " (MARKET CLOSED) ";
 
-  goldClosed().then((data) => {
+  goldToday().then((data) => {
     let bidPrice = data.bid;
     bidPriceP.innerText = bidPrice;
     let askPrice = data.ask;
