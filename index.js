@@ -31,14 +31,14 @@ let ttPriceTicker = document.getElementById("ttPriceTicker");
 
 async function goldToday() {
   let resp = await axios.get(
-    `https://marketdata.tradermade.com/api/v1/historical?currency=XAUUSD&date=${currDate}&api_key=CzyOm57xTxByAcyzwJ-1`
+    `https://marketdata.tradermade.com/api/v1/historical?currency=XAUUSD&date=${currDate}&api_key=gUkkarv9QS3rDdC4nbNk`
   );
   return resp.data.quotes[0];
 }
 
 async function goldClosed() {
   let resp = await axios.get(
-    `https://marketdata.tradermade.com/api/v1/live?currency=XAUUSD&api_key=CzyOm57xTxByAcyzwJ-1`
+    `https://marketdata.tradermade.com/api/v1/live?currency=XAUUSD&api_key=gUkkarv9QS3rDdC4nbNk`
   );
   return resp.data.quotes[0];
 }
@@ -117,14 +117,13 @@ if (currentDay === 0 || currentDay === 6) {
   });
 } else {
   let priceHistory = [];
-
   let bidPriceHistory = [];
   let askPriceHistory = [];
 
   let socket = new WebSocket("wss://marketdata.tradermade.com/feedadv");
 
   socket.onopen = function (e) {
-    socket.send('{"userKey":"wsyq7Qki66DBHGD5fxJg", "symbol":"XAUUSD"}');
+    socket.send('{"userKey":"wsfFreW4D3eaf5gX7FFQ", "symbol":"XAUUSD"}');
     
   };
 
@@ -339,7 +338,7 @@ goldToday().then((data) => {
 
 });
 
-const historicalURL = `https://marketdata.tradermade.com/api/v1/historical?currency=XAUUSD&date=${currDate}&api_key=CzyOm57xTxByAcyzwJ-1`;
+const historicalURL = `https://marketdata.tradermade.com/api/v1/historical?currency=XAUUSD&date=${currDate}&api_key=gUkkarv9QS3rDdC4nbNk`;
 
 //refersh the entire page every 5 minutes
 setInterval(function () {
