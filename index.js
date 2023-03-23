@@ -125,7 +125,7 @@ if (currentDay === 0 || currentDay === 6) {
     let socket = new WebSocket("wss://marketdata.tradermade.com/feedadv");
   
     socket.onopen = function (e) {
-      socket.send('{"userKey":"ws7hIPhsBq2v_sJkoP9g", "symbol":"XAUUSD"}');
+      socket.send('{"userKey":"wsLwWGUJ4VGYzCjj249w", "symbol":"XAUUSD"}');
       
     };
   
@@ -276,7 +276,7 @@ if (currentDay === 0 || currentDay === 6) {
   };
 
   connectWS();
-  setInterval(connectWS, 300000);
+  setInterval(connectWS, 1000000);
 }
 
 // get todays date and insert into html
